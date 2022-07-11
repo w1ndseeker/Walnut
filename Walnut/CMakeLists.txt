@@ -4,11 +4,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS  "-Wno-error=deprecated-declarations -Wno-deprecated-declarations -fPIC" )
 
 file(GLOB_RECURSE SOURCES
-    "src/*/*/*.cpp"
-    "src/*/*.cpp"
-    "src/*.cpp"
-    "src/*.c"
-    "src/*/*.cc"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*/*/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*/*.cc"
 )
 
 set(IMGUI_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../vendor/imgui)
