@@ -1,5 +1,10 @@
 # Walnut
 
+* This repo use cmake instead of lua - cuz i know nothing about lua
+* Compile and Tested on macos-10.15.7
+* Removed most of the subdirectories - cuz i'd like not to compile these libs everytime
+---
+
 Walnut is a simple application framework built with Dear ImGui and designed to be used with Vulkan - basically this means you can seemlessly blend real-time Vulkan rendering with a great UI library to build desktop applications. The plan is to expand Walnut to include common utilities to make immediate-mode desktop apps and simple Vulkan applications.
 
 Currently supports Windows - with macOS and Linux support planned. Setup scripts support Visual Studio 2022 by default.
