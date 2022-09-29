@@ -16,6 +16,8 @@ struct GLFWwindow;
 
 namespace Walnut {
 
+    inline bool g_ApplicationRunning;
+
 	struct ApplicationSpecification
 	{
 		std::string Name = "Walnut App";
