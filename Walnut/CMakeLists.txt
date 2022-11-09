@@ -1,7 +1,7 @@
 project(walnut)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_FLAGS  "-Wno-error=deprecated-declarations -Wno-deprecated-declarations -fPIC" )
+set(CMAKE_CXX_FLAGS  "-fPIC" )
 
 file(GLOB_RECURSE SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/*/*/*.cpp"
@@ -29,6 +29,6 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../vendor/imgui/backends)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../vendor/stb_image)
 
 
-add_library(walnut SHARED ${SOURCES} ${IMGUI_SRC})
+add_library(walnut STATIC ${SOURCES} ${IMGUI_SRC})
 target_link_libraries(walnut ${LIBS})
 

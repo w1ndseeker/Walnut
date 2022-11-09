@@ -25,10 +25,10 @@
 // legacy_stdio_definitions.lib, which we do using this pragma. Your own project
 // should not be affected, as you are likely to link with a newer binary of GLFW
 // that is adequate for your version of Visual Studio.
-#if defined(_MSC_VER) && (_MSC_VER >= 1900) &&                                 \
-    !defined(IMGUI_DISABLE_WIN32_FUNCTIONS)
-#pragma comment(lib, "legacy_stdio_definitions")
-#endif
+// #if defined(_MSC_VER) && (_MSC_VER >= 1900) &&                                 \
+//     !defined(IMGUI_DISABLE_WIN32_FUNCTIONS)
+// #pragma comment(lib, "legacy_stdio_definitions")
+// #endif
 
 //#define IMGUI_UNLIMITED_FRAME_RATE
 #ifdef _DEBUG
